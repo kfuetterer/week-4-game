@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star Wars RPG</title>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="assets/css/reset.css" type="text/stylesheet"></script>
+	<script src="assets/css/style.css" type="text/stylesheet"></script>
+	<script src="assets/javascript/game.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+</head>
+<body background="assets/images/starWars_background.png">
+
+	<div class="page-header">
+		<h1>Star Wars RPG</h1>
+	</div>
+	<br>
+	<h2>Your Character</h2>
+	<br>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3" id="Finn">
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<p>Finn</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<img src="assets/images/character_finn.jpg" alt="Finn" width=100px height=100px>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="health1"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-3" id="Rey">
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<p>Rey</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<img src="assets/images/character_rey.jpg" alt="Rey" width=100px height=100px>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="health2"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-3" id="Kyloren">
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<p>Kylo Ren</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<img src="assets/images/character_kyloren.jpg" alt="Kylo Ren" width=100px height=100px>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="health3"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-md-3" id="Phasma">
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<p>Captain Phasma</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12" style="text-align: center">
+							<img src="assets/images/character_phasma.jpg" alt="Captain Phasma" width=100px height=100px>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div id="health4"></div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+	<br>
+	<h2>Enemies Available to Attack</h2>
+	<br>
+	<div style="text-align: center"><button id="buttonAttack" class="btn btn-primary">Attack</button></div>
+	<br>
+	<h2>Defender</h2>
+
+	<div id="gameover"></div>
+	<br>
+	<div id="restartButton"></div>
+
+</body>
+<style>
+ h1 {
+ 	text-align: center;
+ 	color: #333333;
+ 	font-family: 'Play', sans-serif;
+ 	font-size: 60px;
+ }
+ h2 {
+ 	text-align: center;
+ 	color: #333333;
+ 	font-family: 'Play', sans-serif;
+ 	font-size: 40px;
+ }
+
+ p {
+ 	text-align: center;
+ 	color: #333333;
+ 	font-family: 'Play', sans-serif;
+ 	font-size: 20px;
+ }
+
+</style>
+
+</html>

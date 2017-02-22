@@ -81,7 +81,23 @@ function Attack() {
 		hp[y] = 0;
 			var htmlll = "<p>Game Over. You lose.</p>";
 			document.querySelector("#gameover").innerHTML = htmlll;
+
+			var htmllll = "<button class='btn btn-primary'>Restart</button>"
+			document.querySelector("#restartButton").innerHTML = htmllll;
 	}
+
+	for (var i = 0; i < hp.length; i++) {
+		var html = "<p>" + hp[i] + "</p>";
+		document.querySelector(".h" + (i + 1)).innerHTML = html;
+	}
+
+	for (i = 0; i < hp.length; i++) {
+		var htmll = "<p>" + hp[i] + "</p>";
+		document.querySelector(".h" + (i + 5)).innerHTML = htmll;
+	}
+
+	var htmlllll = "<p>" + hp[y] + "</p><p>" + hp[x] + "</p>";
+	document.querySelector("#pointText").innerHTML = htmlllll;
 
 }
 

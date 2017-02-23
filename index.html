@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
 
+
 </head>
 <body background="assets/images/starWars_background.png">
 
-	<div class="page-header">
+	<div>
 		<h1>Star Wars RPG</h1>
 	</div>
 	<h2>Your Character</h2>
@@ -111,8 +112,8 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12" style="text-align: center">
-							<img src="assets/images/character_finn.jpg" alt="Finn" width=100px height=100px>
+						<div id="img5" class="col-md-12" style="text-align: center">
+							<img id="55" src="assets/images/character_finn.jpg" alt="Finn" width=100px height=100px style="margin: 0px 0px 0px -15px;">
 						</div>
 					</div>
 					<div class="row">
@@ -130,8 +131,8 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12" style="text-align: center">
-							<img src="assets/images/character_rey.jpg" alt="Rey" width=100px height=100px>
+						<div id="img6" class="col-md-12" style="text-align: center">
+							<img id="66" src="assets/images/character_rey.jpg" alt="Rey" width=100px height=100px style="margin: 0px 0px 0px -15px;">
 						</div>
 					</div>
 					<div class="row">
@@ -149,8 +150,8 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12" style="text-align: center">
-							<img src="assets/images/character_kyloren.jpg" alt="Kylo Ren" width=100px height=100px>
+						<div id="img7" class="col-md-12" style="text-align: center">
+							<img id="77" src="assets/images/character_kyloren.jpg" alt="Kylo Ren" width=100px height=100px style="margin: 0px 0px 0px -15px;">
 						</div>
 					</div>
 					<div class="row">
@@ -168,8 +169,8 @@
 						</div>
 					</div>
 					<div class="row">
-						<div class="col-md-12" style="text-align: center">
-							<img src="assets/images/character_phasma.jpg" alt="Captain Phasma" width=100px height=100px>
+						<div id="img8" class="col-md-12" style="text-align: center">
+							<img id="88" src="assets/images/character_phasma.jpg" alt="Captain Phasma" width=100px height=100px style="margin: 0px 0px 0px -15px;">
 						</div>
 					</div>
 					<div class="row">
@@ -181,16 +182,22 @@
 
 			</div>
 		</div>
-	<br>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div style="text-align: center"><button id="buttonAttack" onclick="Attack()" class="btn btn-primary">Attack</button></div>
+			</div>
+			<div class="col-md-6">
+				<div id="restartButton" style="text-align: center"></div>
+			</div>
+		</div>
+	</div>
 	<div id="pointText"></div>
-	<div style="text-align: center"><button id="buttonAttack" onclick="Attack()" class="btn btn-primary">Attack</button></div>
-
-	<br>
-
 	<div id="gameover"></div>
-	<br>
-	<div id="restartButton" style="text-align: center"></div>
 
+    <audio controls autoplay>
+  		<source src="assets/music/StarWarsSong.mp3" type="audio/mp3">
+	</audio>
 </body>
 <style>
 
@@ -206,14 +213,11 @@
 
 	h2 {
 	 	font-size: 25px;
+	 	margin: 0px;
 	}
 
 	p {
 	 	font-size: 20px;
-	}
-
-	.page-header { 
-		border-bottom-width: 2px; 
 	}
 
 	#buttonAttack {
@@ -227,6 +231,19 @@
 		font-family: 'Play', sans-serif;
 		font-size: 20px;
 	}
+
+	audio {
+		position: fixed;
+		bottom: 0px;
+	}
+
+	#img5, #img6, #img7, #img8 {
+		background-color: red;
+		width: 100px;
+		height: 100px;
+		margin-left: 100px;
+	}
+
 
 </style>
 

@@ -154,6 +154,9 @@ function Attack() {
 				document.getElementById("7").style.opacity = "0";
 				document.getElementById("8").style.opacity = "0";
 
+				document.getElementById("img" + w).style.opacity = "0";
+				document.getElementById(w + w).style.opacity = "0";
+
 					for (var i = 0; i < hp.length; i++) {
 						var html = "<p>" + hp[i] + "</p>";
 						document.querySelector(".h" + (i + 1)).innerHTML = html;
